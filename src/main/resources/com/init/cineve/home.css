@@ -1,15 +1,11 @@
-* {
-	-fx-focus-color: -fx-secondary-color;
-}
-
 .tab-header-area .tab-header-background {
  	-fx-background-image: url("images/background.jpg");
         -fx-background-position: center center;
 }
 .tab-pane .tab:selected {
 	-fx-background-color:  rgba(0,0,0,0.8);
-	-fx-background-insets: 0 0 0 0;
-	-fx-background-radius: 0 0 0 0;
+	-fx-background-insets: 0 ;
+	-fx-background-radius: 0 ;
 }
 .tab .tab-label {
  	-fx-alignment: CENTER;
@@ -33,7 +29,87 @@
 	-fx-background-color: transparent;
 }
 .tab-pane:focused .tab-header-area .headers-region .tab:selected .focus-indicator {
- 	-fx-border-width: 0;
-	-fx-border-insets: 0 0 0 0;
-	-fx-border-radius: 0;
+ 	-fx-border-color: transparent;
+}
+
+.text-field {
+    -fx-background-color:  #d09d3c, #000 ;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0 ;
+}
+.text-field:focused {
+    -fx-background-color: #d09d3c, #000;
+    -fx-text-fill: white;
+}
+
+// Background color of the control itself
+.choice-box {
+  -fx-background-color: black;
+  -fx-mark-color: #d09d3c;
+}
+
+// Selected item text color on the control itself
+.choice-box > .label { -fx-text-fill: white; }
+
+.table-button {
+	-fx-background-color: #d09d3c;
+	-fx-cursor: hand;
+}
+.table-button:hover{
+	-fx-background-color: transparent;
+}
+.table-view {
+	-fx-border-color: transparent;
+	-fx-background-color: transparent; /* OR  -fx-background-insets: 0.0; */
+}
+.table-view .column-header-background,
+.table-view .column-header-background .filler,
+.table-view .corner {
+	-fx-background-color: transparent;
+}
+.table-view .column-header {
+	-fx-background-color: #d09d3c;
+	-fx-border-color: #000;
+}
+.table-view .column-header .label{
+	-fx-font-weight: bold;
+	-fx-alignment: center-left;
+	-fx-padding: 10px;
+}
+/* This is just magic */
+.table-row-cell:filled {
+	-fx-background-color: transparent;
+	-fx-border-color: transparent #d09d3c #d09d3c #d09d3c, transparent;
+	-fx-border-insets: 0, 1;
+}
+.table-row-cell:empty {
+	-fx-background-color: transparent;
+}
+.table-row-cell:filled:hover {
+	-fx-background-color: #d09d3c;
+}
+.table-row-cell:filled:selected:hover {
+	-fx-background-color: #d09d3c;
+}
+.table-row-cell:filled:selected {
+  	-fx-background-color: #d09d3c;
+ 	-fx-background-insets: 0.0;
+	-fx-background-radius: 0.0;
+}
+.table-row-cell:filled:selected .table-cell {
+	-fx-text-fill: black;
+}
+.table-view .cell:filled{
+	-fx-cell-size: 30;
+	-fx-alignment: center-left;
+}
+.check-box-table-cell > .check-box:selected .box .mark {
+	-fx-background-color: white;
+}
+.check-box-table-cell > .check-box:selected .box{
+	-fx-background-color: #d09d3c;
+}
+.table-view .placeholder .label {
+	-fx-text-fill: #d09d3c;
+	-fx-padding:20px;
 }

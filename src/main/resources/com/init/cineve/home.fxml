@@ -1,24 +1,174 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@home.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.init.cineve.HomeController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@home.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <TabPane prefHeight="403.0" prefWidth="605.0" tabClosingPolicy="UNAVAILABLE">
+      <TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
           <Tab text="Ventas">
             <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: rgb(30,30,30);" />
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: rgb(30,30,30);">
+                     <children>
+                        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="680.0" style="-fx-padding: 20px;">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="54.0" prefWidth="656.0">
+                                 <children>
+                                    <ImageView fitHeight="60.0" fitWidth="219.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/ventas.png" />
+                                       </image>
+                                    </ImageView>
+                                    <HBox prefHeight="60.0" prefWidth="276.0" />
+                                    <VBox alignment="TOP_RIGHT" prefHeight="60.0" prefWidth="224.0">
+                                       <children>
+                                          <Label style="-fx-padding: 5px;" text="\$0" textFill="#d09d3c">
+                                             <font>
+                                                <Font name="Arial Bold" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField prefHeight="31.0" prefWidth="191.0" promptText="Cedula" style="-fx-padding: 8px;">
+                                             <font>
+                                                <Font name="Arial" size="12.0" />
+                                             </font>
+                                          </TextField>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="390.0" prefWidth="640.0">
+                                 <children>
+                                    <VBox prefHeight="349.0" prefWidth="281.0" style="-fx-padding: 20px;">
+                                       <children>
+                                          <VBox prefHeight="42.0" prefWidth="231.0" style="-fx-padding: 5px;">
+                                             <children>
+                                                <Label style="-fx-padding: 5px;" text="Pelicula" textFill="#d09d3c">
+                                                   <font>
+                                                      <Font name="Arial Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <ChoiceBox prefHeight="25.0" prefWidth="258.0" style="-fx-padding: 4px;" />
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="42.0" prefWidth="231.0" style="-fx-padding: 5px;">
+                                             <children>
+                                                <Label style="-fx-padding: 5px;" text="Tipo de ticket" textFill="#d09d3c">
+                                                   <font>
+                                                      <Font name="Arial Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <ChoiceBox prefHeight="25.0" prefWidth="258.0" style="-fx-padding: 4px;" />
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="42.0" prefWidth="231.0" style="-fx-padding: 5px;">
+                                             <children>
+                                                <Label style="-fx-padding: 5px;" text="Metodo de pago" textFill="#d09d3c">
+                                                   <font>
+                                                      <Font name="Arial Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <ChoiceBox prefHeight="25.0" prefWidth="258.0" style="-fx-padding: 4px;" />
+                                             </children>
+                                          </VBox>
+                                       </children></VBox>
+                                    <VBox prefHeight="349.0" prefWidth="76.0" />
+                                    <VBox alignment="TOP_RIGHT" prefHeight="349.0" prefWidth="301.0" style="-fx-padding: 20px;">
+                                       <children>
+                                          <VBox prefHeight="59.0" prefWidth="242.0" style="-fx-padding: 5px;">
+                                             <children>
+                                                <Label style="-fx-padding: 5px;" text="Estado de reserva" textFill="#d09d3c">
+                                                   <font>
+                                                      <Font name="Arial Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <ChoiceBox prefHeight="33.0" prefWidth="254.0" style="-fx-padding: 4px;" />
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="13.0" prefWidth="159.0" style="-fx-padding: 5px;">
+                                             <children>
+                                                <Label prefHeight="25.0" prefWidth="76.0" style="-fx-padding: 5px;" text="Descuento" textFill="#d09d3c">
+                                                   <font>
+                                                      <Font name="Arial Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField prefHeight="31.0" prefWidth="246.0" promptText="2%" style="-fx-padding: 8px;">
+                                                   <font>
+                                                      <Font name="Arial" size="12.0" />
+                                                   </font>
+                                                </TextField>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="72.0" prefWidth="257.0" style="-fx-padding: 5px;">
+                                             <children>
+                                                <Label style="-fx-padding: 5px;" text="Sala" textFill="#d09d3c">
+                                                   <font>
+                                                      <Font name="Arial Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <ChoiceBox prefHeight="37.0" prefWidth="283.0" style="-fx-padding: 4px;" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children></AnchorPane>
             </content>
           </Tab>
-          <Tab text="Peliculas">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: rgb(30,30,30);" />
-            </content>
-          </Tab>
+            <Tab text="Peliculas">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: rgb(30,30,30);">
+                     <children>
+                        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="680.0" style="-fx-padding: 20px;">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="54.0" prefWidth="656.0">
+                                 <children>
+                                    <ImageView fitHeight="131.0" fitWidth="204.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/nNvtExR7duAslE6TN9ojx590jMC.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="390.0" prefWidth="640.0" style="-fx-padding: 20px;">
+                                 <children>
+                                    <VBox prefHeight="345.0" prefWidth="739.0">
+                                       <children>
+                                          <HBox prefHeight="157.0" prefWidth="640.0">
+                                             <children>
+                                                <TableView prefHeight="294.0" prefWidth="640.0">
+                                                  <columns>
+                                                    <TableColumn prefWidth="276.6666564941406" text="Nombre" />
+                                                    <TableColumn minWidth="0.0" prefWidth="147.66665649414062" text="Genero" />
+                                                      <TableColumn minWidth="0.0" prefWidth="174.33334350585938" text="Idioma" />
+                                                  </columns>
+                                                </TableView>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
             <Tab text="Clientes">
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: rgb(30,30,30);" />

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -12,13 +12,13 @@
 
 <HBox id="pane_background" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@init.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
     <children>
-        <VBox alignment="CENTER" prefHeight="600.0" prefWidth="930.0" style="-fx-padding: 30;">
+        <VBox alignment="CENTER" prefHeight="642.0" prefWidth="904.0" style="-fx-padding: 30;">
             <children>
-                <HBox alignment="CENTER" prefHeight="698.0" prefWidth="840.0" style="-fx-padding: 120;">
+                <HBox alignment="CENTER" prefHeight="586.0" prefWidth="840.0" style="-fx-padding: 120;">
                     <children>
                         <VBox alignment="CENTER" prefHeight="540.0" prefWidth="856.0" style="-fx-background-color: rgba(0,0,0,0.5); -fx-background-radius: 20px; -fx-padding: 50px;">
                             <children>
-                                <ImageView fitHeight="120.0" fitWidth="126.0" pickOnBounds="true" preserveRatio="true">
+                                <ImageView fitHeight="138.0" fitWidth="184.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
                                         <Image url="@images/logo.png" />
                                     </image>
@@ -40,7 +40,10 @@
                                                 </ImageView>
                                             </children>
                                         </HBox>
-                                        <TextField prefHeight="62.0" prefWidth="508.0" promptText="Usuario" />
+                                        <TextField prefHeight="62.0" prefWidth="508.0" promptText="Usuario">
+                                 <font>
+                                    <Font name="Arial" size="12.0" />
+                                 </font></TextField>
                                     </children></HBox>
                                 <Label />
                                 <HBox alignment="CENTER" layoutX="60.0" layoutY="198.0" prefHeight="44.0" prefWidth="580.0" style="-fx-background-color: #d09d3c;">
@@ -54,13 +57,15 @@
                                                 </ImageView>
                                             </children>
                                         </HBox>
-                                        <TextField accessibleText="Usuario" prefHeight="62.0" prefWidth="508.0" promptText="Contraseña" />
+                              <PasswordField prefHeight="73.0" prefWidth="462.0" promptText="Contraseña">
+                                 <font>
+                                    <Font name="Arial" size="12.0" />
+                                 </font>
+                              </PasswordField>
                                     </children>
                                 </HBox>
                                 <Label />
-                                <Hyperlink text="¿Olvido su contraseña?" />
-                                <Label />
-                                <Button mnemonicParsing="false" onAction="#buttonHome" style="-fx-background-color: #d09d3c; -fx-padding: 8px 30px;" text="INGRESAR" textFill="WHITE">
+                                <Button mnemonicParsing="false" style="-fx-background-color: #d09d3c; -fx-padding: 8px 30px;" text="INGRESAR" textFill="WHITE">
                                     <font>
                                         <Font name="Arial Bold" size="12.0" />
                                     </font>

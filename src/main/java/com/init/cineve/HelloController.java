@@ -1,12 +1,14 @@
 package com.init.cineve;
 
-import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 
-public class HelloController {
+import java.net.URL;
+import java.util.ResourceBundle;
 
+public class HelloController implements Initializable {
 
-    @FXML
-    private void buttonHome(ActionEvent event)
-    {
-    };
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+
+    }
 }
