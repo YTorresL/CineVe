@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox id="pane_background" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@init.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<HBox id="pane_background" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@init.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.init.cineve.HelloController">
     <children>
         <VBox alignment="CENTER" prefHeight="642.0" prefWidth="904.0" style="-fx-padding: 30;">
             <children>
@@ -40,7 +40,7 @@
                                                 </ImageView>
                                             </children>
                                         </HBox>
-                                        <TextField prefHeight="62.0" prefWidth="508.0" promptText="Usuario">
+                                        <TextField fx:id="user" prefHeight="62.0" prefWidth="508.0" promptText="Usuario">
                                  <font>
                                     <Font name="Arial" size="12.0" />
                                  </font></TextField>
@@ -57,15 +57,20 @@
                                                 </ImageView>
                                             </children>
                                         </HBox>
-                              <PasswordField prefHeight="73.0" prefWidth="462.0" promptText="Contraseña">
+                              <PasswordField fx:id="password" prefHeight="73.0" prefWidth="462.0" promptText="Contraseña">
                                  <font>
                                     <Font name="Arial" size="12.0" />
                                  </font>
                               </PasswordField>
                                     </children>
                                 </HBox>
-                                <Label />
-                                <Button mnemonicParsing="false" style="-fx-background-color: #d09d3c; -fx-padding: 8px 30px;" text="INGRESAR" textFill="WHITE">
+                        <Label layoutX="310.0" layoutY="352.0" />
+                                <Label fx:id="welcomeText" textFill="WHITE">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font></Label>
+                        <Label layoutX="310.0" layoutY="221.0" />
+                                <Button mnemonicParsing="false" onAction="#OnClickLogin" style="-fx-background-color: #d09d3c; -fx-padding: 8px 30px;" text="INGRESAR" textFill="WHITE">
                                     <font>
                                         <Font name="Arial Bold" size="12.0" />
                                     </font>

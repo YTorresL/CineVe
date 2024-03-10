@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TableColumn?>
@@ -103,7 +105,7 @@
                                                       <Font name="Arial Bold" size="12.0" />
                                                    </font>
                                                 </Label>
-                                                <TextField prefHeight="31.0" prefWidth="246.0" promptText="2%" style="-fx-padding: 8px;">
+                                                <TextField prefHeight="31.0" prefWidth="246.0" promptText="2%" style="-fx-padding: 9px;">
                                                    <font>
                                                       <Font name="Arial" size="12.0" />
                                                    </font>
@@ -112,7 +114,7 @@
                                           </VBox>
                                           <VBox prefHeight="72.0" prefWidth="257.0" style="-fx-padding: 5px;">
                                              <children>
-                                                <Label style="-fx-padding: 5px;" text="Sala" textFill="#d09d3c">
+                                                <Label prefHeight="10.0" prefWidth="35.0" style="-fx-padding: 5px;" text="Sala" textFill="#d09d3c">
                                                    <font>
                                                       <Font name="Arial Bold" size="12.0" />
                                                    </font>
@@ -120,6 +122,19 @@
                                                 <ChoiceBox prefHeight="37.0" prefWidth="283.0" style="-fx-padding: 4px;" />
                                              </children>
                                           </VBox>
+                                          <HBox>
+                                             <children>
+                                                <VBox alignment="CENTER" prefHeight="68.0" prefWidth="269.0" style="-fx-padding: 5px;">
+                                                   <children>
+                                                      <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="267.0" style="-fx-background-color: #d09d3c; -fx-padding: 8px;" text="FACTURAR" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Arial Bold" size="12.0" />
+                                                         </font>
+                                                      </Button>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </HBox>
                                        </children>
                                     </VBox>
                                  </children>
@@ -135,16 +150,16 @@
                      <children>
                         <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="680.0" style="-fx-padding: 20px;">
                            <children>
-                              <HBox alignment="CENTER_LEFT" prefHeight="54.0" prefWidth="656.0">
+                              <HBox alignment="CENTER_LEFT" prefHeight="21.0" prefWidth="640.0">
                                  <children>
-                                    <ImageView fitHeight="131.0" fitWidth="204.0" pickOnBounds="true" preserveRatio="true">
+                                    <ImageView fitHeight="50.0" fitWidth="204.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
                                           <Image url="@images/nNvtExR7duAslE6TN9ojx590jMC.png" />
                                        </image>
                                     </ImageView>
                                  </children>
                               </HBox>
-                              <HBox prefHeight="390.0" prefWidth="640.0" style="-fx-padding: 20px;">
+                              <HBox prefHeight="160.0" prefWidth="640.0" style="-fx-padding: 20px;">
                                  <children>
                                     <VBox prefHeight="345.0" prefWidth="739.0">
                                        <children>
@@ -163,6 +178,75 @@
                                     </VBox>
                                  </children>
                               </HBox>
+                              <HBox>
+                                 <children>
+                                    <VBox prefHeight="68.0" prefWidth="229.0" style="-fx-padding: 5px;">
+                                       <children>
+                                          <Label prefHeight="25.0" prefWidth="103.0" style="-fx-padding: 5px;" text="Buscar pelicula" textFill="#d09d3c">
+                                             <font>
+                                                <Font name="Arial Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField prefHeight="31.0" prefWidth="154.0" promptText="SpiderMan" style="-fx-padding: 9px;">
+                                             <font>
+                                                <Font name="Arial" size="12.0" />
+                                             </font>
+                                          </TextField>
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="68.0" prefWidth="205.0" style="-fx-padding: 5px;">
+                                       <children>
+                                          <Label style="-fx-padding: 5px;" text="Genero" textFill="#d09d3c">
+                                             <font>
+                                                <Font name="Arial Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <ChoiceBox prefHeight="33.0" prefWidth="601.0" style="-fx-padding: 4px;" />
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="72.0" prefWidth="257.0" style="-fx-padding: 5px;">
+                                       <children>
+                                          <Label style="-fx-padding: 5px;" text="Idioma" textFill="#d09d3c">
+                                             <font>
+                                                <Font name="Arial Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <ChoiceBox prefHeight="33.0" prefWidth="603.0" style="-fx-padding: 4px;" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="TOP_RIGHT" layoutX="30.0" layoutY="255.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="72.0" prefWidth="238.0" style="-fx-padding: 5px;">
+                                       <children>
+                                          <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="267.0" style="-fx-background-color: #d09d3c; -fx-padding: 8px;" text="ELIMINAR " textFill="WHITE">
+                                             <font>
+                                                <Font name="Arial Bold" size="12.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="68.0" prefWidth="229.0" style="-fx-padding: 5px;">
+                                       <children>
+                                          <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="267.0" style="-fx-background-color: #d09d3c; -fx-padding: 8px;" text="MODIFICAR" textFill="WHITE">
+                                             <font>
+                                                <Font name="Arial Bold" size="12.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="72.0" prefWidth="257.0" style="-fx-padding: 5px;">
+                                       <children>
+                                          <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="267.0" style="-fx-background-color: #d09d3c; -fx-padding: 8px;" text="AGREGAR" textFill="WHITE">
+                                             <font>
+                                                <Font name="Arial Bold" size="12.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
                            </children>
                         </VBox>
                      </children>
@@ -171,17 +255,263 @@
             </Tab>
             <Tab text="Clientes">
                <content>
-                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: rgb(30,30,30);" />
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: rgb(30,30,30);">
+                     <children>
+                        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="680.0" style="-fx-padding: 20px;">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="21.0" prefWidth="640.0">
+                                 <children>
+                                    <ImageView fitHeight="50.0" fitWidth="204.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/client.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="241.0" prefWidth="640.0" style="-fx-padding: 20px;">
+                                 <children>
+                                    <VBox prefHeight="134.0" prefWidth="600.0">
+                                       <children>
+                                          <HBox prefHeight="207.0" prefWidth="600.0">
+                                             <children>
+                                                <TableView prefHeight="153.0" prefWidth="600.0">
+                                                   <columns>
+                                                      <TableColumn prefWidth="204.0" text="Nombre" />
+                                                      <TableColumn minWidth="0.0" prefWidth="117.0" text="Cedula" />
+                                                      <TableColumn minWidth="0.0" prefWidth="121.0" text="Teléfono" />
+                                                      <TableColumn minWidth="0.0" prefWidth="333.0" text="Gmail" />
+                                                   </columns>
+                                                </TableView>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox>
+                                 <children>
+                                    <VBox prefHeight="72.0" prefWidth="293.0" style="-fx-padding: 5px;">
+                                       <children>
+                                          <Label prefHeight="25.0" prefWidth="94.0" style="-fx-padding: 5px;" text="Buscar cedula" textFill="#d09d3c">
+                                             <font>
+                                                <Font name="Arial Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField prefHeight="31.0" prefWidth="154.0" promptText="30266331" style="-fx-padding: 9px;">
+                                             <font>
+                                                <Font name="Arial" size="12.0" />
+                                             </font>
+                                          </TextField>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="72.0" prefWidth="238.0" style="-fx-padding: 5px;">
+                                       <children>
+                                          <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="267.0" style="-fx-background-color: #d09d3c; -fx-padding: 8px;" text="MODIFICAR" textFill="WHITE">
+                                             <font>
+                                                <Font name="Arial Bold" size="12.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="72.0" prefWidth="251.0" style="-fx-padding: 5px;">
+                                       <children>
+                                          <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="267.0" style="-fx-background-color: #d09d3c; -fx-padding: 8px;" text="REGISTRAR" textFill="WHITE">
+                                             <font>
+                                                <Font name="Arial Bold" size="12.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="68.0" prefWidth="229.0" style="-fx-padding: 5px;">
+                                       <children>
+                                          <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="267.0" style="-fx-background-color: #d09d3c; -fx-padding: 8px;" text="HISTORIAL" textFill="WHITE">
+                                             <font>
+                                                <Font name="Arial Bold" size="12.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="72.0" prefWidth="238.0" style="-fx-padding: 5px;">
+                                       <children>
+                                          <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="267.0" style="-fx-background-color: #d09d3c; -fx-padding: 8px;" text="ELIMINAR" textFill="WHITE">
+                                             <font>
+                                                <Font name="Arial Bold" size="12.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children></AnchorPane>
                </content>
             </Tab>
             <Tab text="Salas">
                <content>
-                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: rgb(30,30,30);" />
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: rgb(30,30,30);">
+                     <children>
+                        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="680.0" style="-fx-padding: 20px;">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="21.0" prefWidth="640.0">
+                                 <children>
+                                    <ImageView fitHeight="50.0" fitWidth="204.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/unnamed.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="239.0" prefWidth="640.0" style="-fx-padding: 20px;">
+                                 <children>
+                                    <VBox prefHeight="136.0" prefWidth="600.0">
+                                       <children>
+                                          <HBox prefHeight="157.0" prefWidth="640.0">
+                                             <children>
+                                                <TableView prefHeight="156.0" prefWidth="600.0">
+                                                   <columns>
+                                                      <TableColumn prefWidth="163.0" text="Numero" />
+                                                      <TableColumn minWidth="0.0" prefWidth="150.0" text="Tipo" />
+                                                      <TableColumn minWidth="0.0" prefWidth="287.0" text="Pelicula" />
+                                                   </columns>
+                                                </TableView>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox>
+                                 <children>
+                                    <VBox prefHeight="68.0" prefWidth="344.0" style="-fx-padding: 5px;">
+                                       <children>
+                                          <Label prefHeight="25.0" prefWidth="76.0" style="-fx-padding: 5px;" text="Filtro" textFill="#d09d3c">
+                                             <font>
+                                                <Font name="Arial Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="33.0" prefWidth="194.0">
+                                             <children>
+                                                <RadioButton mnemonicParsing="false" style="-fx-padding: 5px;" text="All" textFill="#d09d3c">
+                                                   <font>
+                                                      <Font name="Arial Bold" size="12.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton layoutX="152.0" layoutY="14.0" mnemonicParsing="false" style="-fx-padding: 5px;" text="All" textFill="#d09d3c">
+                                                   <font>
+                                                      <Font name="Arial Bold" size="12.0" />
+                                                   </font>
+                                                </RadioButton>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="68.0" prefWidth="303.0" style="-fx-padding: 5px;">
+                                       <children>
+                                          <Label style="-fx-padding: 5px;" text="Pelicula" textFill="#d09d3c">
+                                             <font>
+                                                <Font name="Arial Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <ChoiceBox prefHeight="33.0" prefWidth="601.0" style="-fx-padding: 4px;" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children></AnchorPane>
                </content>
             </Tab>
             <Tab text="Administración">
                <content>
-                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: rgb(30,30,30);" />
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: rgb(30,30,30);">
+                     <children>
+                        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="680.0" style="-fx-padding: 20px;">
+                           <children>
+                              <HBox prefHeight="249.0" prefWidth="640.0" style="-fx-padding: 20px;">
+                                 <children>
+                                    <VBox prefHeight="207.0" prefWidth="600.0">
+                                       <children>
+                                          <HBox prefHeight="280.0" prefWidth="600.0">
+                                             <children>
+                                                <TableView prefHeight="213.0" prefWidth="600.0">
+                                                   <columns>
+                                                      <TableColumn prefWidth="121.0" text="Referencia" />
+                                                      <TableColumn minWidth="0.0" prefWidth="190.0" text="Pelicula" />
+                                                      <TableColumn minWidth="0.0" prefWidth="194.0" text="Nombre" />
+                                                      <TableColumn minWidth="0.0" prefWidth="415.0" text="Total" />
+                                                   </columns>
+                                                </TableView>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox>
+                                 <children>
+                                    <VBox prefHeight="72.0" prefWidth="293.0" style="-fx-padding: 5px;">
+                                       <children>
+                                          <Label prefHeight="25.0" prefWidth="121.0" style="-fx-padding: 5px;" text="Buscar Referencia" textFill="#d09d3c">
+                                             <font>
+                                                <Font name="Arial Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField prefHeight="31.0" prefWidth="154.0" promptText="30266331" style="-fx-padding: 9px;">
+                                             <font>
+                                                <Font name="Arial" size="12.0" />
+                                             </font>
+                                          </TextField>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="72.0" prefWidth="238.0" style="-fx-padding: 5px;">
+                                       <children>
+                                          <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="267.0" style="-fx-background-color: #d09d3c; -fx-padding: 8px;" text="AGREGAR EMPLEADOS" textFill="WHITE">
+                                             <font>
+                                                <Font name="Arial Bold" size="12.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" layoutX="303.0" layoutY="10.0" prefHeight="72.0" prefWidth="238.0" style="-fx-padding: 5px;">
+                                       <children>
+                                          <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="267.0" style="-fx-background-color: #d09d3c; -fx-padding: 8px;" text="ELIMINAR EMPLEADOS" textFill="WHITE">
+                                             <font>
+                                                <Font name="Arial Bold" size="12.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="72.0" prefWidth="238.0" style="-fx-padding: 5px;">
+                                       <children>
+                                          <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="267.0" style="-fx-background-color: #d09d3c; -fx-padding: 8px;" text="MODIFICAR EMPLEADOS" textFill="WHITE">
+                                             <font>
+                                                <Font name="Arial Bold" size="12.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="13.0" prefWidth="640.0">
+                                 <children>
+                                    <Label prefHeight="15.0" prefWidth="167.0" text="Autores: Yalith Torres" textFill="WHITE">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox prefHeight="31.0" prefWidth="219.0" />
+                                    <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="267.0" style="-fx-background-color: red; -fx-padding: 8px;" text="CERRAR SECCIÓN" textFill="WHITE">
+                                       <font>
+                                          <Font name="Arial Bold" size="12.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children></AnchorPane>
                </content>
             </Tab>
         </tabs>

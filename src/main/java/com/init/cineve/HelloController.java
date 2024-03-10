@@ -1,14 +1,39 @@
 package com.init.cineve;
 
-import javafx.fxml.Initializable;
+import javafx.fxml.FXML;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 
-import java.net.URL;
-import java.util.ResourceBundle;
+import javax.crypto.SecretKey;
+import java.io.IOException;
 
-public class HelloController implements Initializable {
+import static com.init.cineve.HelloApplication.employee;
 
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
+public class HelloController {
+    @FXML
+    private Label welcomeText;
+    @FXML
+    private TextField user;
+    @FXML
+    private PasswordField password;
 
+    @FXML
+    protected void OnClickLogin() throws Exception {
+        String encodedUser = HelloApplication.encode(user.getText().getBytes());
+        String encodedPassword = HelloApplication.encode(password.getText().getBytes());
+
+        boolean Logged = employee.Login(encodedUser, encodedPassword);
+        if (Logged) {
+            welcomeText.setText("¡Bienvenido!, " + employee.Name);
+            // to home
+            HelloApplication.Home();
+            //close login
+            Scene scene = welcomeText.getScene();
+            scene.getWindow().hide();
+        } else {
+            welcomeText.setText("Usuario o contraseña incorrectos");
+        }
     }
 }
