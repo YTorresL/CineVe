@@ -8,6 +8,8 @@ public class Employees {
     public String User;
     private String Password;
     public DatabaseConnection conn;
+
+
     public Employees(DatabaseConnection conn) {
 
         this.conn = conn;
