@@ -43,6 +43,15 @@ public class HelloApplication extends Application {
         alert.showAndWait();
     }
 
+    public static void  updatePasswordEmployee() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("updatePasswordEmployees.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 580, 350);
+        Stage stage = new Stage();
+        stage.setTitle("CineVe! Actualización de usuario y contraseña");
+        stage.setScene(scene);
+        stage.show();
+    }
+
     public static String encode(byte [] data){
         return Base64.getEncoder().encodeToString(data);
     }

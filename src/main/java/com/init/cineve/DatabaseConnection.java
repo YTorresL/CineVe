@@ -18,7 +18,7 @@ public class DatabaseConnection {
     public  MongoDatabase DB = null;
     public DatabaseConnection() {
         try {
-            String connectionString = "mongodb+srv://admin:jsFKhTVTg9qSP0sz@cluster0.p2diax9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+            String connectionString = "mongodb+srv://admin:password@cluster0.p2diax9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
             // Construct a ServerApi instance using the ServerApi.builder() method
             ServerApi serverApi = ServerApi.builder()
                     .version(ServerApiVersion.V1)
