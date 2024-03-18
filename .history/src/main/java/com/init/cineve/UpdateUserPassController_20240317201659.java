@@ -66,6 +66,18 @@ public class UpdateUserPassController {
             );}
         HelloApplication.Home();
         User.getScene().getWindow().hide();
+        MongoCollection<Document> collection = conn.DB.getCollection("history_user_pass");
+        InsertOneResult updateDoc = collection.insertOne(
+                new Document("name_employee", name)
+                        .append("newPass", Password.getText())
+                        .append("newUser", User.getText())
+                        .append("date", System.currentTimeMillis())
+        );
+        MongoCollection<Document> Logincollection = conn.DB.getCollection("employees");
+        UpdateResult updateLogin =  Logincollection.updateOne(
+                new Document("name", name),
+                new Document("$set", new Document("user", User.getText()).append("password", Password.getText()))
+        );
     }
 
 

@@ -73,7 +73,7 @@ public class HelloApplication extends Application {
     }
 
     public static void DeleteClient() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("deleteClients.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("deleteMovies.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 680, 450);
         Stage stage = new Stage();
         stage.setTitle("CineVe! Eliminar Cliente");
@@ -81,7 +81,7 @@ public class HelloApplication extends Application {
         stage.show();
     }
     public static void EditClient() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("editClients.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("editMovies.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 680, 450);
         Stage stage = new Stage();
         stage.setTitle("CineVe! Modificar Cliente");
@@ -89,46 +89,14 @@ public class HelloApplication extends Application {
         stage.show();
     }
     public static void AddClient() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("addClients.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("addMovies.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 680, 450);
         Stage stage = new Stage();
         stage.setTitle("CineVe! Agregar Cliente");
         stage.setScene(scene);
         stage.show();
     }
-    public static void HistoryClient() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("historyClient.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 680, 450);
-        Stage stage = new Stage();
-        stage.setTitle("CineVe! Historial Cliente");
-        stage.setScene(scene);
-        stage.show();
-    }
 
-public static void DeleteEmployees() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("deleteEmployees.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 680, 450);
-        Stage stage = new Stage();
-        stage.setTitle("CineVe! Eliminar Empleado");
-        stage.setScene(scene);
-        stage.show();
-    }
-    public static void EditEmployees() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("editEmployees.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 680, 450);
-        Stage stage = new Stage();
-        stage.setTitle("CineVe! Modificar Empleado");
-        stage.setScene(scene);
-        stage.show();
-    }
-    public static void AddEmployees() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("addEmployees.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 680, 450);
-        Stage stage = new Stage();
-        stage.setTitle("CineVe! Agregar Empleado");
-        stage.setScene(scene);
-        stage.show();
-    }
 
 
     public static void main(String[] args) {

@@ -105,30 +105,6 @@ public class HelloApplication extends Application {
         stage.show();
     }
 
-public static void DeleteEmployees() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("deleteEmployees.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 680, 450);
-        Stage stage = new Stage();
-        stage.setTitle("CineVe! Eliminar Empleado");
-        stage.setScene(scene);
-        stage.show();
-    }
-    public static void EditEmployees() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("editEmployees.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 680, 450);
-        Stage stage = new Stage();
-        stage.setTitle("CineVe! Modificar Empleado");
-        stage.setScene(scene);
-        stage.show();
-    }
-    public static void AddEmployees() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("addEmployees.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 680, 450);
-        Stage stage = new Stage();
-        stage.setTitle("CineVe! Agregar Empleado");
-        stage.setScene(scene);
-        stage.show();
-    }
 
 
     public static void main(String[] args) {
